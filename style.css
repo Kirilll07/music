@@ -1,0 +1,307 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner {
+  min-height: 100vh;
+  background: url(images/рок_гитара.jpg);
+  background-position: center;
+  background-size: cover;
+  background-size: 1500px;
+}
+
+.toggle {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  background-image: url(images/AC_DC.jpg);
+  background-size: 170px;
+  right: -180px;
+  bottom: -100px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle.active{
+  z-index: 11;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 30%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 6px 2px 5px rgb(255, 255, 255);
+  border: #ffffff solid 2px;
+  background-image: none;
+}
+
+.toggle.active::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: #ffffff;
+  transform: translateY(-6px);
+  transform: rotate(45deg) translateY(0);
+}
+
+.toggle.active::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: #ffffff;
+  transform: translateY(6px);
+  transform: rotate(-45deg) translateY(0);
+}
+
+.AC_DC{
+  font-size: 40px;
+  position: relative;
+  bottom: -100px;
+  right: -205px;
+}
+
+.toggle2{
+  position: relative;
+  width: 170px;
+  height: 170px;
+  background-image: url(images/metallica.jpg);
+  background-size: 170px;
+  right: -580px;
+  bottom: -250px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle2.active{
+  z-index: 11;
+  right: -10px;
+ bottom: 205px;
+  border-radius: 30%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 6px 2px 5px rgb(255, 255, 255);
+  border: #ffffff solid 2px;
+  background-image: none;
+}
+
+.toggle2.active::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: #ffffff;
+  transform: translateY(-6px);
+  transform: rotate(45deg) translateY(0);
+}
+
+.toggle2.active::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: #ffffff;
+  transform: translateY(6px);
+  transform: rotate(-45deg) translateY(0);
+}
+
+.Metallica{
+  font-size: 40px;
+  position: relative;
+  right: -585px;
+  bottom: -250px;
+}
+
+.toggle3{
+  position: relative;
+  width: 170px;
+  height: 170px;
+  background-image: url(images/QUEEN.jpg);
+  background-size: 170px;
+  right: -1080px;
+ bottom: 400px;
+  cursor: pointer;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggle3.active{
+  z-index: 11;
+  right: -10px;
+ bottom: 423px;
+  border-radius: 30%;
+  width: 50px;
+  height: 50px;
+  box-shadow: 6px 2px 5px black;
+  border: #120e0f solid 2px;
+  background-image: none;
+}
+
+.toggle3.active::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: #120e0f;
+  transform: translateY(-6px);
+  transform: rotate(45deg) translateY(0);
+}
+
+.toggle3.active::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 6px;
+  background-color: #120e0f;
+  transform: translateY(6px);
+  transform: rotate(-45deg) translateY(0);
+}
+
+.Queen{
+  font-size: 40px;
+  position: relative;
+  right: -1100px;
+  bottom: 400px;
+}
+
+.nav {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1250px;
+  background-image: url(images/череп.jpg);
+  background-position: center;
+  background-size: 2000px;
+  display: none;
+  padding-right: 100px;
+}
+
+.nav.active {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.nav2 {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1250px;
+  background-image: url(images/инь_янь.jpg);
+  background-position: center;
+  background-size: 2000px;
+  display: none;
+  padding-right: 100px;
+}
+
+.nav2.active {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.nav3 {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1250px;
+  background-image: url(images/ОГОООООНЬ!!!.jpg);
+  background-position: center;
+  background-size: 2000px;
+  display: none;
+  padding-right: 100px;
+}
+
+.nav3.active {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.nav3.do{
+  background-color: antiquewhite;
+}
+
+.AC_DC-text{
+  width: 500px;
+  margin-right:390px ;
+  margin-bottom: 1000px;
+}
+
+.Metallica-text{
+  width: 300px;
+  margin-right:500px ;
+  margin-bottom: 1000px;
+}
+
+.Queen-text{
+  width: 300px;
+  margin-right:500px ;
+  margin-bottom: 1000px;
+}
+
+.player
+{
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 420px;
+    width: 450px;
+    background-color: none;
+}
+
+.all_players{
+  position: absolute;
+  top: 180px;
+}
+
+.player audio
+{
+    width: 100%;
+    outline: none;
+}
+
+.rand{
+  color: black;
+  margin-top: 207px;
+  margin-left: 1340px;
+  width: 130px;
+  height: 50px;
+  background-color: rgb(120, 246, 246); 
+}
+
+.rand:active{
+  background-color: rgb(161, 255, 255);
+  color: rgb(71, 71, 71);
+}
+
+.title{
+  color: white;
+}
+
+.title2{
+  color: black;
+}
